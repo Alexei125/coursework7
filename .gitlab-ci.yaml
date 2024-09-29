@@ -7,6 +7,6 @@ Deploy to stage:
         - cp $ENV_STAGE .env
         - bash deploy.sh
     only:
-        - main
+        - habits
     tags:
         - dev
