@@ -129,9 +129,7 @@ CELERY_TASK_TIME_LIMIT = 30 * 60
 CELERY_BEAT_SCHEDULE = {
     "task-name": {
         "task": "habit.tasks.send_message_tg",
-        "schedule": timedelta(
-            minutes=1
-        ),
+        "schedule": timedelta(minutes=1),
     },
 }
 
